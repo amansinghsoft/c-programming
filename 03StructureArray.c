@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-struct empolye
+struct employee
 {
     int id;
     char name[15];
-    float selary;
+    float salary;
 };
 
 int main()
 {
-    struct empolye arr[5];
+    struct employee arr[5];
     printf("Enter employ id number : \n");
     for (int i = 0; i < 5; i++)
     {
@@ -21,16 +21,16 @@ int main()
         scanf("%s", &arr[i].name);
     }
 
-    printf("Enter employ selary : \n");
+    printf("Enter employ salary : \n");
     for (int i = 0; i < 5; i++)
     {
-        scanf("%f", &arr[i].selary);
+        scanf("%f", &arr[i].salary);
     }
 
-    printf("Employ information is : \n");
+    printf("Emploies information are : \n");
     for (int i = 0; i < 5; i++)
     {
-        printf("%d  %s  %.2f\n", arr[i].id, arr[i].name, arr[i].selary);
+        printf("%d  %s  %.2f\n", arr[i].id, arr[i].name, arr[i].salary);
     }
     return 0;
 }

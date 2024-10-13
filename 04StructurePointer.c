@@ -16,6 +16,6 @@ int main()
     ptr = &e1;
 
     printf("%d", (*ptr).id);  // Both (*ptr).id and ptr -> id are same.
-    printf("%d", ptr->id);
+    printf("%d", ptr -> id);  //arrow function.
     return 0;
 }
